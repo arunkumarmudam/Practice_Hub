@@ -1,6 +1,6 @@
 package com.incognito.soap;
 
-//comment
+//comment removed
 public class SoapSimulatorResponses {
 
     public static String loginResponse(String token) {
