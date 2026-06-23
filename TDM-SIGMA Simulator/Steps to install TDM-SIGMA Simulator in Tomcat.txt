@@ -1,0 +1,41 @@
+Steps to Configure Simulator for Incognito:
+
+
+Prerequisites: Java, Apache Tomcat(of any version 5.0 or above) 
+
+METHOD 1:
+
+Steps: 
+1) Copy the TDMSigmaSimulator.war file under "Installer" folder to following location and Paste
+
+	(driver):\Program Files\Apache Software Foundation\Tomcat (version)\webapps\
+
+2) Start (or Restart) Tomcat.
+
+3) Open your browser and go to:http://localhost:8080/TDMSigmaSimulator/ it should open saysing  "TDMSigmaSimulator Running on port: 8080".
+
+
+METHOD 2:
+
+1. Start Tomcat
+2. Open Tomcat Manager in Browser Go to: http://localhost:8080/manager/html
+3. Login to Tomcat Manager,   Enter username and password defined in tomcat-users.xml (next step explains this)
+
+If you haven’t set up login yet:Open:TOMCAT_HOME/conf/tomcat-users.xml
+Add the following inside <tomcat-users> tag:
+<role rolename="manager-gui"/>
+<user username="admin" password="admin123" roles="manager-gui"/>
+Save and restart Tomcat
+
+4. In Manager App: Scroll to “Deploy” section,  Find “WAR file to deploy” upload option
+
+5. Choose WAR file, Click Browse, select TDMSigmaSimulator.war file under "Installer" folder
+
+6. Click “Deploy”,Tomcat uploads and deploys the WAR file
+
+7. Open browser and go to:http://localhost:8080/TDMSigmaSimulator/ it should open saysing  "TDMSigmaSimulator Running on port: 8080".
+
+
+
+
+
